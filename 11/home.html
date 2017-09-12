@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>Homespace</title>
+			<link rel="icon" type="image/png" href="icons/navy_anchor.png"/>
+			<link rel="stylesheet" href="style.css" type="text/css" />
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		</head>
+		<body bgcolor="#151515">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<header>
+Wilkommen
+</header>
+			<div class="searchContainer" align="center">
+				<form class="searchForm" method="get" target="" action="https://duckduckgo.com/?q="> <!-- Use "_blank" for target to open in a new tab. -->
+					<input class="searchBar duckduckgo" type="text" name="q" placeholder="<<"/>
+				</form>
+			</div>
+
+			<ul class="border">
+								<li><a class="parent1" href="#">Media</a> <!-- Entertainment -->
+					<ul class="subMenu">	
+						<li><a class="tab1" href="https://www.primewire.ag">Movies</a></li>
+						<li><a class="tab1" href="https://www.primewire.ag/?tv">Tele</a></li>
+						<li><a class="tab1" href="http://kisscartoon.me/">Cartoon</a></li>
+						<li><a class="tab1" href="http://kissanime.to/">Animu</a></li>
+					</ul>
+				</li>				
+				<li><a class="parent2" href="#">Social</a> <!-- 4chan -->
+					<ul class="subMenu">
+						<li><a class="tab2" href="https://tumblr.com/">Tumblr</a></li>
+						<li><a class="tab2" href="https://facebook.com/">Facebook</a></li>
+						<li><a class="tab2" href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
+						<li><a class="tab2" href="https://www.openmailbox.org/webmail/">OPMBX</a></li>
+					</ul>
+				</li>
+				<li><a class="parent3" href="#">Pron</a> <!-- 8ch -->
+					<ul class="subMenu">
+						<li><a class="tab3" href="https://nhentai.net">N-Hentai</a></li>
+						<li><a class="tab3" href="https://exhentai.net">exhentai</a></li>
+						<li><a class="tab3" href="https://gelbooru.org">Gelbooru</a></li>
+						<li><a class="tab3" href="https://derpibooru.org">Derpibooru</a><li>
+						<li><a class="tab3" href="https://fimfiction.net">FimFiction</a></li>
+						<li><a class="tab3" href="http://abdlstories.homestead.com/AB_DL_Stories.html">Homestead</a></li>
+						<li><a class="tab3" href="https://archiveofourown.org">A03</a><li>
+						<li><a class="tab3" href="https://e621.net">e621</a><li>
+					</ul>
+				</li>
+				<li><a class="parent4" href="#">Torrents</a> <!-- Torrents -->
+					<ul class="subMenu">
+						<li><a class="tab4" href="https://thepiratebay.net">The Pirate Bay</a></li> <!-- Be wary -->
+						<li><a class="tab4" href="https://kickass.to">Kickass</a></li> <!-- Joint Taskforce Takedown -->
+						<li><a class="tab4" href="https://rarbg.to/torrents">Rarbg</a></li> <!-- Standard go-to -->
+						<li><a class="tab4" href="https://nyaa.se">Nyaa</a></li> <!-- Anime Affiliate -->
+					</ul>
+				</li>
+				<li><a class="parent5" href="#">Tools</a> <!-- Utility -->
+					<ul class="subMenu">
+						<li><a class="tab5" href="http://html-color-codes.info">Hex Colors</a></li>
+						<li><a class="tab5" href="https://pastebin.com">Pastebin</a></li>
+						<li><a class="tab5" href="https://pomf.is">Pomf</a></li>
+						<li><a class="tab5" href="https://dafont.com">DaFont</a></li>
+						<li><a class="tab5" href="https://gnome-look">Gnome Look</a></li>
+						<li><a class="tab5" href="https://userstyles.org">Stylish</a></li>
+					</ul>
+				</li>
+				<li><a class="parent6" href="#">Tech</a> <!-- Tech shit -->
+					<ul class="subMenu">
+						<li><a class="tab6" href="https://stackoverflow.com">Stack Overflow</a></li>
+						<li><a class="tab6" href="https://wiki.archlinux.org">Arch Wiki</a></li>
+						<li><a class="tab6" href="http://127.0.0.1:7657">I2P</a></li>
+						<li><a class="tab6" href="http://192.168.0.1/">RCP</a></li>
+						
+					</ul>
+				</li>
+			</ul>
+				<script>
+					$('.subMenu').hide();
+					$("li:has(ul)").click(function(){
+					$("ul",this).slideToggle('fast');
+					});
+				</script>
+		</body>
+	</html>

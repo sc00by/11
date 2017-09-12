@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>ホームページ</title>
+			<link rel="icon" type="image/png" href="icons/navy_anchor.png"/>
+			<link rel="stylesheet" href="style.css" type="text/css" />
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		</head>
+		<body bgcolor="#17181A">
+			<div class="searchContainer">
+				<form class="searchForm" method="get" target="" action="https://duckduckgo.com/?q="> <!-- Use "_blank" for target to open in a new tab. -->
+					<input class="searchBar duckduckgo" type="text" name="q" placeholder="もしもし！ どこえ？"/>
+				</form>
+			</div>
+
+			<header>
+				<h1>ドナルド・トランプ~</h1>
+			</header>
+
+			<ul class="border">
+				<li><a class="parent1" href="#">ハーフチャネル</a> <!-- 4chan -->
+					<ul class="subMenu">
+						<li><a class="tab1" href="https://boards.4chan.org/g/catalog">/g/</a></li>
+						<li><a class="tab1" href="https://boards.4chan.org/b/catalog">/b/</a></li>
+						<li><a class="tab1" href="https://boards.4chan.org/k/catalog">/k/</a></li>
+						<li><a class="tab1" href="https://boards.4chan.org/p/catalog">/p/</a></li>
+						<li><a class="tab1" href="https://boards.4chan.org/w/catalog">/w/</a></li>
+						<li><a class="tab1" href="https://boards.4chan.org/wg/catalog">/wg/</a></li>
+					</ul>
+				</li>
+				<li><a class="parent2" href="#">フルチャネル</a> <!-- 8ch -->
+					<ul class="subMenu">
+						<li><a class="tab2" href="https://8ch.net/b/catalog.html">/b/</a></li>
+						<li><a class="tab2" href="https://8ch.net/n/catalog.html">/n/</a></li>
+						<li><a class="tab2" href="https://8ch.net/tech/catalog.html">/tech/</a></li>
+					</ul>				
+				</li>
+				<li><a class="parent3" href="#">ユーティリティ</a> <!-- Utility -->
+					<ul class="subMenu">
+						<li><a class="tab3" href="http://127.0.0.1:7657">I2P Router</a></li>
+						<li><a class="tab3" href="http://html-color-codes.info">Color Hex Allocations</a></li>
+						<li><a class="tab3" href="https://wiki.archlinux.org">Arch Wiki</a></li>
+						<li><a class="tab3" href="https://pastebin.com">Pastebin</a></li>
+						<li><a class="tab3" href="https://pomf.is">Pomf</a></li>
+						<li><a class="tab3" href="https://nya.is">Nya</a></li>
+						<li><a class="tab3" href="https://openmailbox.org/webmail/">OPMBX</a></li>
+						<li><a class="tab3" href="https://mail.cock.li">Cockli</a></li>
+						<li><a class="tab3" href="https://drive.google.com/folderview?id=0B_VmbVyD4eT3N1VUbGN4Wjd5OVE">Anime Repo</a></li>
+					</ul>
+				</li>
+				<li><a class="parent4" href="#">トレント</a> <!-- Torrents -->
+					<ul class="subMenu">
+						<li><a class="tab4" href="https://thepiratebay.org">The Pirate Bay</a></li> <!-- Be wary (.net?) -->
+						<li><a class="tab4" href="https://kickass.cd">Kickass</a></li> <!-- Joint Taskforce Takedown -->
+						<li><a class="tab4" href="https://kat.am">Kat</a></li> <!-- Another kat mirror -->
+						<li><a class="tab4" href="https://rarbg.to/torrents.php?category[]=41">Rarbg</a></li> <!-- Standard go-to -->
+						<li><a class="tab4" href="https://extratorrent.cc/">ExtraTorrent</a></li> <!-- Eh? -->
+						<li><a class="tab4" href="https://nyaa.se">Nyaa</a></li> <!-- Anime Affiliate -->
+					</ul>
+				</li>
+				<li><a class="parent5" href="#">テックのたわごと</a> <!-- Tech shit -->
+					<ul class="subMenu">
+						<li><a class="tab5" href="https://fsf.org">FSF</a></li>
+						<li><a class="tab5" href="https://stackoverflow.com">Stack Overflow</a></li>
+						<li><a class="tab5" href="https://github.com">Github</a></li>
+					</ul>
+				</li>
+				<li><a class="parent6" href="#">エンターテインメント</a> <!-- Entertainment -->
+					<ul class="subMenu">	
+						<li><a class="tab6" href="https://www.primewire.ag">Movies</a></li>
+						<li><a class="tab6" href="https://www.primewire.ag/?tv">Tele</a></li>
+						<li><a class="tab6" href="https://www.deviantart.com">DA</a></li>
+						<li><a class="tab6" href="http://g.e-hentai.org/">G.E-Hentai</a></li>
+						<li><a class="tab6" href="https://exhentai.org">Exhentai</a></li>
+					</ul>
+				</li>
+			</ul>
+				<script>
+					$('.subMenu').hide();
+					$("li:has(ul)").click(function(){
+					$("ul",this).slideToggle('fast');
+					});
+				</script>
+		</body>
+	</html>

@@ -1,0 +1,53 @@
+@namespace html url(http://www.w3.org/1999/xhtml);
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/*
+    Author: Twily
+    Description: Minimal flat styled tabs for Australis
+    Compatibility: -- Firefox 43.0.4 --
+    Website: http://twily.info/
+
+
+    Useful search tags within this css:
+    "url-bar visible", "bottom margin", "attach url-bar", "newtab button", "back/forward", "enable scrollbar"
+
+
+    To enable bitmap fonts in Firefox 44+; open "about:config" and set the following preference to "false":
+    "gfx.font_rendering.fontconfig.fontlist.enabled"
+*/
+
+
+:root {
+    /* TAB VARIABLES */
+    --bg-light: #17181A; --bg-dark: #27282B;
+    --fg-light: #CECFD1; --fg-dark: #AAABAD;
+    --tab-triangle-correction: -1px;
+    --tab-height: 24px; --tab-icon-size: 16px; --tab-strip-margin: -12px; --tab-overlap: -5px;
+    --tab-fonts: "Droid Sans","Source Sans Pro","Lemon",monospace,"Dejavu Sans"; --tab-font-size: 10pt;
+    --tab-text-align: left; /* left | center | right */
+    --tab-triangle: block;  /* block | none */
+
+    /* URL VARIABLES */
+    --url-background: var(--bg-light); --url-color: var(--fg-dark);
+    --url-height: 24px; --url-right-margin: 6px;
+    --url-fonts: "Droid Sans", "Source Sans Pro", "Lemon",monospace,"Dejavu Sans"; --url-font-size: 10pt;
+    --url-text-align: center; /* left | center | right */
+    --url-position: absolute; /* absolute == top (under tabs) || fixed == bottom of browser */
+}
+
+/* About:Blank background */
+@-moz-document url(about:blank) {
+    html,body { background: var(--bg-light) !important; }
+}
+
+
+/*----- Fix for white flash on new tab -----*/
+tabbrowser tabpanels, #appcontent > #content { background: var(--bg-light) !important; }
+
+
+/* Set dark text in light textareas */
+/*
+@-moz-document regexp("https?://(?!(localhost|twily.info|.*.4chan.org|.*.youtube.com)).*") {
+    input, textarea { color: #222628 !important; -moz-appearance: none !important; }
+}
+/**/
+
